@@ -13,7 +13,7 @@ module.exports.loop = function () {
     var builders = _.filter(Game.creeps, (creep) => creep.memory.role == 'builder');
     var repairers = _.filter(Game.creeps, (creep) => creep.memory.role == 'repairer');
 
-    var mainSpawn = Game.spawns["Hive_A"];
+    var mainSpawn = Game.spawns["Spawn1"];
     
     for(var name in Memory.creeps) {
         if(!Game.creeps[name]) {
